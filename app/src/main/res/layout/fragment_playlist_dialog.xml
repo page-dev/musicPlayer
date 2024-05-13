@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BottomDialog.PlaylistDialogFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_playlist_txt"
+        android:text="Add to new Playlist"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlist_dialog_new_playlist"
+        android:padding="20dp"
+        android:layout_below="@id/new_playlist_txt"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/playlist_dialog_save"
+            android:layout_marginEnd="20dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/playlist_dialog_playlist_name"
+                android:hint="Playlist Name"
+                android:textColorHint="@color/red"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlist_dialog_save"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:text="SAVE"
+            android:textColor="@color/red"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playlist_dialog_new_playlist"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/existing_playlist_txt"
+            android:text="Add to existing Playlist"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECYCLERVIEW HERE"
+            android:layout_below="@id/existing_playlist_txt"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
